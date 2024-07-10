@@ -27,4 +27,4 @@
         </ul>
     </ol>
 
-    [Back](https://github.com/BobbyTerence/ChessBoard)
+[Back](https://github.com/BobbyTerence/ChessBoard)
