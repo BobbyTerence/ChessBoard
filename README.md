@@ -4,6 +4,7 @@ In a desire to keep programming while looking for a job, but also to learn a lit
 ### Table of Contents
 - [Objectives](#objectives)
 - [Learning and Resources](https://github.com/BobbyTerence/ChessBoard/blob/main/lessons-learned.md)
+- [Workflow](https://github.com/BobbyTerence/ChessBoard/blob/main/workflow.md)
 
 ## Objectives
 - Become more familiar with JavaScript.
