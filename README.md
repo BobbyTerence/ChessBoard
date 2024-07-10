@@ -1,7 +1,7 @@
 # Web Chess Board
 In a desire to keep programming while looking for a job, but also to learn a little more about JavaScript, I am creating a webpage to facilitate a Chess game.
 
-##### Table of Contents
+### Table of Contents
 - [Objectives](#objectives)
 - [Learning and Resources](https://github.com/BobbyTerence/ChessBoard/blob/main/lessons-learned.md)
 

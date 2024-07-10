@@ -1,5 +1,5 @@
 ## Learning and Resources
-#### DOM
+### DOM
   **Resources:**<br>
 	- [W3 Schools](https://www.w3schools.com/js/js_htmldom.asp)
 
