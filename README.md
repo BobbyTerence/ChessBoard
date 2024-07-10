@@ -16,9 +16,9 @@ In a desire to keep programming while looking for a job, but also to learn a lit
 	- [W3 Schools](https://www.w3schools.com/js/js_htmldom.asp)
 
   **What is the DOM**<br>
- 	The Document Object Model (DOM) is what programming languages (*like JavaScript*) use to modify HTML elements, and their properties.
-	When working with the DOM, you can use methods to perform actions on Elements, and the values used within those methods are then applied to the corresponding element's properties.<br>
-		- These properties include small things like *text-size*, or they can completely change the content of the element using the *.innerHTML* property. <br>
+ 	<p>The Document Object Model (DOM) is what programming languages (*like JavaScript*) use to modify HTML elements, and their properties.
+	When working with the DOM, you can use methods to perform actions on Elements, and the values used within those methods are then applied to the corresponding element's properties.</p>
+		<ul>These properties include small things like text-size, or they can completely change the content of the element using the .innerHTML property.</ul>
 
   **Accessing the DOM**<br>
  	To utilize JavaScript to manipulate content on your HTML page, you want to use the *document* object. The use of this object allows you to find specific elements by using one of three methods.
