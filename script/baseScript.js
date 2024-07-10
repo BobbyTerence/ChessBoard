@@ -1,6 +1,6 @@
 // Create a global variable to access the board element
 var board = document.getElementById("board");
 
-function onLoad() {
-
-}
+board.innerHTML += "<button class='square'/>"
+board.innerHTML += "<button class='square'/>"
+board.innerHTML += "<button class='square'/>"

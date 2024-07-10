@@ -1,0 +1,14 @@
+// Set display properties of the board
+#board {
+    height: 100vh;
+    justify-content: center;
+}
+
+.square {
+    border-style: solid;
+    border-color: #000000;
+    border-width: 5px;
+    background-color: #FFFFFF;
+    height: 80px;
+    width: 80px;
+}
