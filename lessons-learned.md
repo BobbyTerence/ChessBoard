@@ -27,4 +27,8 @@
         </ul>
     </ol>
 
+##### JavaScript Methods and Properties
+  **nodeType**
+    <p>The `.nodeType` property returns an integer depending on what type of node it is on. For my case with the board, I am using it to determine that the element being passed into the `appendChildMult()` function is an element, and in my case a div. You can find a list of integers that `.nodeType` returns [here](https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType).</p>
+
 [Back](https://github.com/BobbyTerence/ChessBoard)
