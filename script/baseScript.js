@@ -1,58 +1,39 @@
-// Globally used variables
-    // Will keep track of number of rows created for the createRow function
-var divRow = 0;
+// Create a variable to keep track of turn order
+var turnOrder = 0; // To keep it simple, 0 is X, anything else is O
+var board = Array[9].fill(null); // This array will keep track of the board state
 
-// Create variable to hold the board element
-let board = document.getElementById("board");
+function clickTile(tileId) {
+    // This will allow us to change the properties of the clicked tile
+    const tile = document.getElementById(tileId);
 
-var boardTile = document.createElement("button");
-
-boardTile.className = "square";
-
-createRow(board);
-
-function appendTile(parent) {
-    // Check for valid parent element
-    console.log(parent.nodeType);
-    if(parent.nodeType == 1) {
-        const tile = document.createElement("button");
-        tile.className = "square";
-        parent.appendChild(tile);
+    if(tile.textContent == "") {
+        tile.textContent = placeToken(tileId);
+    } else {
+        console.log("Tile already picked");
     }
+
+    checkGame();
 }
 
-function appendDiv(parent) {
-    // Check for valid parent element
-    if(parent.nodeType == 1) {
-        const newRow = document.createElement("div");
-        let id = "row" + divRow;
-        newRow.id = id;
-        newRow.className = "row";
-        parent.appendChild(newRow);
-
-        console.log(id);
-
-        // Return the value of the id to use with other function
-        return id;
+function placeToken(tileId) {
+    let token;
+    if(turnOrder == 0) {
+        token = 'X';
+        turnOrder = 1;
+    } else {
+        token = 'O';
+        turnOrder = 0;
     }
+    board[tileId] = token;
+    checkWin();
+    return token;
 }
 
-
-
-/**
- * Create a function to create each row for the board
- */
-function createRow(parentEle, columns = 3) {
-    // This will create a new div, and assign the id to  newRow
-    newRow = appendDiv(parentEle);
-
-    console.log(newRow);
-
-    for(tile = 0; tile < columns; tile++) {
-        // newRow is then passed to appendTile, so that it can find the right id in order to create the row
-        appendTile(newRow);
-    }
-
-    // increment divRow
-    divRow++;
+function checkGame() {
+    // Create an array to hold a combination of winning board states
+    const winningCombinations = [
+        [0, 1, 2], [3, 4, 5], [6, 7, 8], // Rows
+        [0, 3, 6], [1, 4, 7], [2, 5, 8], // Columns
+        [0, 4, 8], [2, 4, 6]             // Diagonals
+    ];
 }

@@ -12,6 +12,6 @@ In a desire to keep programming while looking for a job, but also to learn a lit
 - Learn more about my personal development process, and possibly pick up more tools to help with a better workflow.
 
 ## What am I doing
-I am going to create a `square` class and use `.scss` to make a square to represent the board pieces
+Board has been created, but not exactly the way that I wanted to. However, it is in enough of a workable state that I am able to start creating Game rules.
 
-In order to keep border width consistent, I might have to resort to defining styling rules as I create the tile instead of keeping static style rules for it.
+In terms of creating those Game Rules, I am working on figuring out how I will be determining the win condition, and how I will be checking for the win condition. This will probably involve adding a `checkGame()` function at the end of the `clickTile()` function.
